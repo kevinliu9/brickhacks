@@ -4,20 +4,9 @@ from flask import Flask
 app = Flask(__name__)
 @app.route('/')
 def hello():
-    a = '                                 Hello Person!'
-    a += '\n'
-    a += ('                    Please type in a fake news source here:\n')
-    a += ("----------------------------------------------------------------" + '\n')
-    a += ("         |                                                                |\n")
-    a += ("         |                                                                |\n")
-    a += ("----------------------------------------------------------------" + '\n')
-    a += '\n'
-    a += ('                        Thanks for playing! :)\n')
-    a += '\n'
-    a += ('                 Made by Ian, Brendan, Gordon, Kevin\n')
-                
-    """Return a friendly HTTP greeting."""
-    return a
+    a = open("index.html", "r")
+    b = a.read()
+    return b
 
 if __name__ == '__main__':
     # This is used when running locally only. When deploying to Google App

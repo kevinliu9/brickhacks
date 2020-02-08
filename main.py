@@ -4,6 +4,17 @@ from flask import Flask
 app = Flask(__name__)
 @app.route('/')
 def hello():
+    a = "                                 Hello Person!" + '\n';
+    a += ('                    Please type in a fake news source here:\n')
+    a += ("----------------------------------------------------------------" + '\n')
+    a += ("         |                                                                |\n")
+    a += ("         |                                                                |\n")
+    a += ("----------------------------------------------------------------" + '\n')
+    a += '\n'
+    a += ('                        Thanks for playing! :)\n')
+    a += '\n'
+    a += ('                 Made by Ian, Brendan, Gordon, Kevin\n')
+                
     """Return a friendly HTTP greeting."""
     return '''                                 Hello Person!
                                   Please type in a fake news source here:

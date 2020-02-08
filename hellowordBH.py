@@ -4,12 +4,14 @@ from flask import Flask
 app = Flask(__name__)
 @app.route('/')
 
-def hellov2():
-    return 'Will this work?'
 def hello():
     """Return a friendly HTTP greeting."""
-    hellov2()
-    return 'Hello World! Goodbye World! Whatever World! Donkey!'
+    a = hellov2()
+    return (a + 'Hello World! Goodbye World! Whatever World! Donkey!')
+
+def hellov2():
+    return 'Will this work?'
+
 
 
 

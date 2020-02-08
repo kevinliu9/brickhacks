@@ -4,21 +4,10 @@ from flask import Flask
 app = Flask(__name__)
 @app.route('/')
 def hello():
-    a = '                                 Hello Person!'
-    a += '\n'
-    a += ('                    Please type in a fake news source here:\n')
-    a += ("----------------------------------------------------------------" + '\n')
-    a += ("         |                                                                |\n")
-    a += ("         |                                                                |\n")
-    a += ("----------------------------------------------------------------" + '\n')
-    a += '\n'
-    a += ('                        Thanks for playing! :)\n')
-    a += '\n'
-    a += ('                 Made by Ian, Brendan, Gordon, Kevin\n')
-                
-    b = '<center><h1>Please enter a URL you wish to check</h1><br/><input placeholder="http:://www.example.com/"/></center>'
-    """Return a friendly HTTP greeting."""
-    return b
+    indexFile = open("index.html", "r")
+    indexCmd = indexFile.read()
+    indexFile.close()
+    return indexCmd
 
 if __name__ == '__main__':
     # This is used when running locally only. When deploying to Google App

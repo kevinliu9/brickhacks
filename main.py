@@ -16,8 +16,9 @@ def hello():
     a += '\n'
     a += ('                 Made by Ian, Brendan, Gordon, Kevin\n')
                 
+    b = '<center><h1>Please enter a URL you wish to check</h1><br/><input placeholder="http:://www.example.com/"/></center>'
     """Return a friendly HTTP greeting."""
-    return a
+    return b
 
 if __name__ == '__main__':
     # This is used when running locally only. When deploying to Google App

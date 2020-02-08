@@ -3,11 +3,14 @@ from flask import Flask
 # called `app` in `main.py`.
 app = Flask(__name__)
 @app.route('/')
-def hello():
-    """Return a friendly HTTP greeting."""
-    return 'Hello World! Goodbye World! Whatever World! Donkey!'
+
 def hellov2():
     return 'Will this work?'
+def hello():
+    """Return a friendly HTTP greeting."""
+    hellov2()
+    return 'Hello World! Goodbye World! Whatever World! Donkey!'
+
 
 
     

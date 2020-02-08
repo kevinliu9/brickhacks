@@ -11,7 +11,7 @@ def hello():
     e.pack()
 
     e.focus_set()
-    print e.get()
+    print(e.get())
     b = Button(master, text = "OK", width = 10, command = callback)
     b.pack()
     return 'Hello World! Goodbye World! Whatever World! Donkey!'

@@ -16,18 +16,8 @@ def hello():
     a += ('                 Made by Ian, Brendan, Gordon, Kevin\n')
                 
     """Return a friendly HTTP greeting."""
-    return '''                                 Hello Person!
-                                  Please type in a fake news source here:
-                                  
-                     ----------------------------------------------------------------
-                    |                                                                |
-                    |                                                                |
-                     ----------------------------------------------------------------
-                     
-                                       Thanks for playing! :)
-                                       
-                               Made by Ian, Brendan, Gordon, Kevin
-           '''
+    return a
+
 if __name__ == '__main__':
     # This is used when running locally only. When deploying to Google App
     # Engine, a webserver process such as Gunicorn will serve the app. This
